@@ -15,16 +15,17 @@ public class Biggest_Value {
 
         for (int i = 0; i < mas.length; i++) {
             mas[i] = getRandomNumberInRange(maxValue);
-            System.out.println(mas[i]);
+            System.out.print(mas[i]);
+            System.out.print(" ");
         }
 
         int max = mas[0];
         for (int i = 0; i < mas.length; i++) {
             if (max < mas[i]) {
                 max = mas[i];
-                System.out.println("Didziausias skaicius yra:" + max);
             }
         }
+        System.out.println("Didziausias skaicius yra:" + max);
     }
     private static int getRandomNumberInRange(int max) {
         Random r = new Random();
